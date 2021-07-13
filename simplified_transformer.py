@@ -152,8 +152,7 @@ class Decoder(nn.Module):
             [DecoderBlock(embed_size, dropout, device)
              for _ in range(num_layers)]
         )
-        
-        self.context = context
+                
         self.return_context = return_context
         
         self.contextualise = get_global_context
